@@ -1,3 +1,4 @@
+application.properties file that includes necessary configurations for a Spring Boot application. I've also included common settings you might need, such as server port configuration , and database connection settings (assuming you might need a database connection)
 1) Go to http://localhost:9098/pinfo/home
 2) Enter a product Information Click the Submit button
 3) Enter a product ID in the input field.
