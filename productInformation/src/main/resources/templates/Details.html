@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Product Details</h1>
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <th scope="row">Product Name</th>
+            <td th:text="${product.productName}">Product Name</td>
+        </tr>
+        <tr>
+            <th scope="row">Product Cost</th>
+            <td th:text="${product.productCost}">Product Cost</td>
+        </tr>
+        <tr>
+            <th scope="row">Product Brand</th>
+            <td th:text="${product.productBrand}">Product Brand</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Add a link/button to go back to the home page -->
+    <a href="/pinfo/home" class="btn btn-secondary">Back to Home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Product Details</h1>
+    <div th:if="${product.isPresent()}">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <th scope="row">Product Name</th>
+                <td th:text="${product.get().productName}">Product Name</td>
+            </tr>
+            <tr>
+                <th scope="row">Product Cost</th>
+                <td th:text="${product.get().productCost}">Product Cost</td>
+            </tr>
+            <tr>
+                <th scope="row">Product Brand</th>
+                <td th:text="${product.get().productBrand}">Product Brand</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:unless="${product.isPresent()}">
+        <p>No product found for ID: <span th:text="${param.id}">ID</span></p>
+    </div>
+</div>
+</body>
+</html>

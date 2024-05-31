@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View All Products</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Product Deleted Result</h1>
+    <!-- Display the message -->
+    <p th:text="'Message: ' + ${message}"></p>
+    <br>
+    <!-- Add a link/button to go back to the home page -->
+    <a href="/pinfo/home" class="btn btn-secondary">Back to Home</a>
+</div>
+</body>
+</html>
