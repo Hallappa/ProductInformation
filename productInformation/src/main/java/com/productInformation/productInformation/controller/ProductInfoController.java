@@ -22,7 +22,7 @@ public class ProductInfoController {
         model.addAttribute("productInfo", new ProductInfo());
         return "Home";
     }
-
+//addded
     @PostMapping("/create")
     public String create(@ModelAttribute ProductInfo productInfo, Model model) {
         productServis.create(productInfo);
