@@ -23,6 +23,9 @@ public class ProductInfoController {
         return "Home";
     }
 //addded
+    public void t()
+    {
+    }
     @PostMapping("/create")
     public String create(@ModelAttribute ProductInfo productInfo, Model model) {
         productServis.create(productInfo);
